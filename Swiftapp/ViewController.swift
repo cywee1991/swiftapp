@@ -9,7 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var counter = 0
+    
+    @IBOutlet weak var TextLabel: UILabel!
+    
+    @IBAction func Taptap(_ sender: Any) {
+        counter += 1
+        if counter == 10 {
+            TextLabel.text = "Bye Bye 10 times!!"
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
